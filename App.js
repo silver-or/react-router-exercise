@@ -3,6 +3,7 @@ import { useRoutes, Link } from "react-router-dom";
 import styled from "styled-components";
 import Bmi from "./components/Bmi";
 import Calc from "./components/Calc";
+import Counter from "./components/Counter";
 import Grade from "./components/Grade";
 import Login from "./components/Login";
 export default function App () {
@@ -14,7 +15,8 @@ export default function App () {
     { path : "bmi", element : <Bmi/> },
     { path : "calc", element : <Calc/> },
     { path : "grade", element : <Grade/> },
-    { path : "login", element : <Login/> }
+    { path : "login", element : <Login/> },
+    { path : "counter", element : <Counter/>}
   ]);
 }
 
@@ -53,6 +55,7 @@ const Navibar = () => (
       <Li><Link to={"/calc"}>Calc</Link></Li>
       <Li><Link to={"/grade"}>Grade</Link></Li>
       <Li><Link to={"/login"}>Login</Link></Li>
+      <Li><Link to={"/counter"}>Counter</Link></Li>
     </Ul>
   </nav>
 )
